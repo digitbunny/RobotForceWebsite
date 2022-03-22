@@ -1,0 +1,60 @@
+.arrow {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  -webkit-transform: translate(-85%, -50%);
+          transform: translate(-85%, -50%);
+  cursor: pointer;
+}
+
+.arrow span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-bottom: 2px solid #3be2ff;
+  border-right: 2px solid #3be2ff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin: -10px;
+  -webkit-animation: animate 2s infinite;
+          animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+  border-bottom: 2px solid #1dacff;
+  border-right: 2px solid #1dacff;
+}
+
+.arrow span:nth-child(3) {
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
+  border-bottom: 2px solid #057aff;
+  border-right: 2px solid #057aff;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=arrow.css.map */

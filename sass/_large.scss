@@ -1,0 +1,352 @@
+@media (min-width: 992px) {
+	.head {
+		background-image: url(../img/header.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		&__img {
+			display: none;
+		}
+	}
+	.nav {
+		&-mobile {
+			display: none;
+		}
+		&-desktop {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding-top: 1.6em;
+		}
+
+		&__logo-desktop {
+			margin-left: 1em;
+			padding: 0.5em;
+			width: 200px;
+		}
+
+		&__item {
+			&::before,
+			&::after {
+				display: block;
+				position: absolute;
+				content: '';
+				transition: 0.5s;
+			}
+		}
+	}
+	.dropdown {
+		position: relative;
+		display: inline-block;
+		transition-duration: 5s;
+	}
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		top: 55px;
+		background-color: $dark-navy;
+		border: 2px solid $blue;
+		padding: 10px;
+		min-width: 300px;
+		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+		z-index: 3;
+	}
+
+	.dropdown-content a {
+		color: black;
+		padding: 12px 10px;
+		font-size: 1.4rem;
+		color: $white;
+		text-decoration: none;
+		display: block;
+	}
+
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+
+	.dropdown-content:hover {
+		transition-duration: 5s;
+	}
+
+	.logo {
+		display: none;
+	}
+
+	.hamburger {
+		display: none;
+	}
+
+	.header {
+		margin: 0 1em;
+		padding: 0 0.5em;
+		justify-content: space-between;
+		height: 80vh;
+
+		&__img {
+			display: block;
+			width: 380px;
+		}
+		&__text {
+			text-align: left;
+			padding-right: 1em;
+		}
+
+		&__title {
+			font-size: 1.4rem;
+		}
+		&__heading {
+			margin-bottom: 4.4rem;
+			font-size: 4.6rem;
+			letter-spacing: 0;
+		}
+
+		&__subhead {
+			margin-bottom: 6rem;
+			font-size: 1.7rem;
+			letter-spacing: 0;
+			line-height: 32px;
+			font-weight: 400;
+			color: $light-grey;
+		}
+	}
+
+	.arrow {
+		display: block;
+	}
+
+	//profit//
+
+	.profit {
+		margin-top: 6em;
+		&__box {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		&__img img {
+			width: 200px;
+		}
+
+		&__text {
+			width: 50%;
+			text-align: left;
+		}
+
+		&__heading {
+			font-size: 2.8rem;
+		}
+
+		&__subhead {
+			font-size: 1.6rem;
+		}
+	}
+
+	.ai-power {
+		margin-top: 12em;
+		&__box {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		&__img-mobile {
+			display: none;
+		}
+
+		&__text {
+			width: 50%;
+			text-align: right;
+		}
+
+		&__heading {
+			font-size: 2.8rem;
+		}
+
+		&__subhead {
+			font-size: 1.6rem;
+		}
+
+		&__img-desktop {
+			display: block;
+		}
+
+		&__img-desktop img {
+			width: 200px;
+		}
+	}
+
+
+
+
+
+//card///
+
+.advantages {
+	margin-top: 12em;
+	
+	&__box {
+		justify-content: space-between;
+	}
+}
+.card {
+	padding: 2em;
+	height: 400px;
+	width: 300px;
+}
+
+
+//FOOTER//
+
+.footer-middle {
+	p {
+		margin: 1em 4em;
+	}
+}
+
+
+//DOWNLOAD//
+
+
+.download {
+	margin-top: 12em;
+
+	&__graphic {
+		position: absolute;
+		right: 900px;
+		z-index: -1;
+	}
+
+&__graphic2{
+	display: block;
+	position: absolute;
+		left: 800px;
+		z-index: -1;
+}
+
+
+	&__title {
+		padding-bottom: 1.4em;
+		font-size: 2.8rem;
+	}
+
+	&__subtitle {
+		padding-bottom: 2em;
+		color: #bac4d3;
+		font-size: 1.6rem;
+		font-weight: 400;
+		line-height: 23px;
+	}
+
+	&__icon img {
+		width: 70px;
+		padding-bottom: 2em;
+	}
+}
+
+
+//NEW POWER//
+
+.background {
+	background-image: url('../img/more.png');
+	background-size: 45%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.new-power {
+	position: relative;
+	margin: 14em auto;
+
+	&__box {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		padding: 14em;
+		text-align: center;
+		z-index: 100;
+	}
+
+	&__title {
+		font-size: 3.7rem;
+		letter-spacing: 0.05rem;
+		color: $blue;
+	}
+
+	&__subtitle{
+		margin: 5rem 10rem;
+		font-size: 1.8rem;
+		line-height: 30px;
+		font-weight: 600;
+	}
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1200px) {
+	.header {
+		&__img {
+			width: 420px;
+		}
+
+		&__heading {
+			font-size: 5rem;
+		}
+
+		&__subhead {
+			font-size: 1.9rem;
+			letter-spacing: 0.2px;
+			line-height: 32px;
+		}
+	}
+
+	.card {
+		padding: 3em;
+		margin: 1em;
+		height: 450px;
+		width: 350px;
+		text-align: left;
+		border-radius: 1em;
+		border: 1px solid $blue;
+		box-shadow: 0 0 2em 0 #0099ff94;
+}
+}
+
+@media (min-width: 1300px) {
+	.header {
+		&__img {
+			width: 480px;
+		}
+		&__text {
+			padding-right: 3em;
+		}
+
+		&__title {
+			font-size: 1.6rem;
+		}
+		&__heading {
+			font-size: 5.4rem;
+		}
+
+		&__subhead {
+			font-size: 2rem;
+			letter-spacing: 0.2px;
+			line-height: 32px;
+		}
+	}
+
+
+}
